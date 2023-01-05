@@ -5,6 +5,7 @@ public:
        stack<int> st;
        st.push(-1);
 
+        // to find the next greater elements of every element of nums2
        for(int i = nums2.size()-1; i>=0; i--){
            while(st.top() !=-1 && nums2[i] > st.top())
                 st.pop();
